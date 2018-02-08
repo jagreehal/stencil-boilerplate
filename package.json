@@ -1,0 +1,59 @@
+{
+  "name": "stencil-app",
+  "version": "1.0.0",
+  "description": "Stencil boilerplate",
+  "main": "dist/stencil-app.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npm run clean && stencil build --prerender",
+    "clean": "rimraf dist",
+    "copy:static": "cp -r ./static/ ./dist && cp -r ./src/assets ./dist",
+    "copy:index": "cpx \"src/index.html\" www -w",
+    "deploy": "gh-pages -d dist",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" \"npm run copy:index\"",
+    "lint": "sd concurrent \"npm run lint:ts\" \"npm run lint:styles\"",
+    "lint:styles": "stylelint src/**/*.scss",
+    "lint:ts": "tslint -p tsconfig.json -c tslint.json",
+    "serve": "stencil-dev-server",
+    "serve.prod": "npm run build && npm run copy-static && serve ./dist",
+    "start": "npm run dev",
+    "test": "jest --no-cache",
+    "test:watch": "jest --watch --no-cache"
+  },
+  "author": "Jag Reehal",
+  "license": "ISC",
+  "dependencies": {
+    "@stencil/core": "0.3.0"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "^0.0.18",
+    "@stencil/utils": "^0.0.4",
+    "@types/jest": "^22.1.1",
+    "cpx": "^1.5.0",
+    "jest": "^22.2.1",
+    "prettier": "^1.10.2",
+    "rimraf": "^2.6.2",
+    "stylelint": "^8.4.0",
+    "stylelint-scss": "^2.3.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "5.6.0",
+    "tslint-config-prettier": "^1.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
