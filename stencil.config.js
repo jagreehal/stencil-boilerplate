@@ -1,3 +1,8 @@
-exports.config = {"namespace":"stencil-app","generateDistribution":true,"generateWWW":true,"bundles":[{"components":["my-app"]}]};
+exports.config = {
+  namespace: 'stencil-app',
+  generateDistribution: true,
+  generateWWW: true,
+  serviceWorker: null
+};
 
-exports.devServer = {"root":"www","watchGlob":"**/**"};
+exports.devServer = { root: 'www', watchGlob: '**/**' };

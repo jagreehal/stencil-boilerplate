@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "tag": "my-app",
+      "dependencies": [],
+      "componentClass": "MyApp",
+      "componentPath": "components/my-app/my-app.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/my-app/my-app.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "first",
+          "type": "String"
+        },
+        {
+          "name": "last",
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.4.0",
+    "typescriptVersion": "2.7.1"
+  }
+}
