@@ -1,0 +1,10 @@
+@import '../_colors.css';
+
+:host {
+  display: block; /* by default, custom elements are display: inline */
+  color: var(--black);
+
+  & span {
+    color: var(--grey);
+  }
+}

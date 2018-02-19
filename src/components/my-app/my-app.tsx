@@ -2,8 +2,8 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'my-app',
-  styleUrl: 'my-app.scss',
-  shadow: false
+  styleUrl: 'my-app.css',
+  shadow: true
 })
 export class MyApp {
   @Prop() first: string;
@@ -13,7 +13,7 @@ export class MyApp {
     if (this.first && this.last) {
       return (
         <div>
-          Hello, my name is {this.first} {this.last}
+          <span>Hello</span>, my name is {this.first} {this.last}
         </div>
       );
     }
