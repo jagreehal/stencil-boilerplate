@@ -5,14 +5,15 @@
   "main": "dist/stencil-app.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "npm run clean && stencil build --prerender",
     "clean": "rimraf dist",
     "copy:static": "cp -r ./static/ ./dist && cp -r ./src/assets ./dist",
     "deploy": "gh-pages -d dist",
-    "dev":
-      "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\"",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\"",
     "lint": "sd concurrent \"npm run lint:ts\" \"npm run lint:styles\"",
     "lint:styles": "stylelint \"src/**/*.css\"",
     "lint:ts": "tslint -p tsconfig.json -c tslint.json",
@@ -25,7 +26,7 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.6.1"
+    "@stencil/core": "0.6.2"
   },
   "devDependencies": {
     "@stencil/dev-server": "^0.0.18",
@@ -49,10 +50,15 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.(ts|tsx)$":
-        "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "json", "jsx"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
   }
 }
