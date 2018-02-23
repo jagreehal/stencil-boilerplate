@@ -27,7 +27,7 @@
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.6.0",
+    "version": "0.6.6",
     "typescriptVersion": "2.7.2"
   }
 }

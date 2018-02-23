@@ -1,7 +1,1 @@
-:host {
-  display: block; /* by default, custom elements are display: inline */
-  color: #000
-}
-:host span {
-  color: rgb(90, 90, 90);
-}
+:host{display:-webkit-box;display:-ms-flexbox;display:flex;color:#000}:host .welcome{color:#5a5a5a}

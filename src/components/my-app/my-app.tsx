@@ -13,7 +13,8 @@ export class MyApp {
     if (this.first && this.last) {
       return (
         <div>
-          <span>Hello</span>, my name is {this.first} {this.last}
+          <span class="welcome">Hello</span>, my name is {this.first}{' '}
+          {this.last}
         </div>
       );
     }

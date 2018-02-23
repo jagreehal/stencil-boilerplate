@@ -1,5 +1,4 @@
 const postcss = require('@stencil/postcss');
-const autoprefixer = require('autoprefixer');
 
 exports.config = {
   namespace: 'stencil-app',
@@ -9,16 +8,22 @@ exports.config = {
   plugins: [
     postcss({
       plugins: [
-        require('stylelint'),
-        require('postcss-import'),
-        require('css-mqpacker'),
+        require('postcss-import')({
+          plugins: [require('stylelint')()]
+        }),
         require('postcss-cssnext', {
-          browsers: ['last 6 versions'],
-          cascade: false
+          browsers: ['last 6 versions']
+        }),
+        require('cssnano'),
+        require('postcss-reporter')({
+          clearReportedMessages: true
         })
       ]
     })
   ]
 };
 
-exports.devServer = { root: 'www', watchGlob: '**/**' };
+exports.devServer = {
+  root: 'www',
+  watchGlob: '**/**'
+};

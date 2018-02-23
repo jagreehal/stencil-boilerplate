@@ -2,10 +2,10 @@ export class MyApp {
     render() {
         if (this.first && this.last) {
             return (h("div", null,
-                h("span", null, "Hello"),
+                h("span", { class: "welcome bar" }, "Hello"),
                 ", my name is ",
                 this.first,
-                " ",
+                ' ',
                 this.last));
         }
     }

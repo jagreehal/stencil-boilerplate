@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-const{h:t,Context:s}=window.StencilApp;class e{render(){if(this.first&&this.last)return t("div",null,t("span",null,"Hello"),", my name is ",this.first," ",this.last)}static get is(){return"my-app"}static get encapsulation(){return"shadow"}static get properties(){return{first:{type:String,attr:"first"},last:{type:String,attr:"last"}}}static get style(){return":host{display:block;color:#000}:host span{color:#5a5a5a}"}}export{e as MyApp};
