@@ -1,4 +1,5 @@
 const postcss = require('@stencil/postcss');
+const sass = require('@stencil/sass');
 
 exports.config = {
   namespace: 'stencil-app',
@@ -6,18 +7,14 @@ exports.config = {
   generateWWW: true,
   serviceWorker: null,
   plugins: [
+    sass(),
     postcss({
       plugins: [
-        require('postcss-import')({
-          plugins: [require('stylelint')()]
-        }),
-        require('postcss-cssnext', {
+        require('autoprefixer')({
           browsers: ['last 6 versions']
         }),
-        require('cssnano'),
-        require('postcss-reporter')({
-          clearReportedMessages: true
-        })
+        require('cssnano')(),
+        require('postcss-reporter')()
       ]
     })
   ]
