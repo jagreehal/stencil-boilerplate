@@ -1,0 +1,87 @@
+{
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.7.5"
+  },
+  "app": {
+    "namespace": "StencilApp",
+    "fsNamespace": "stencil-app",
+    "components": 1,
+    "entries": 1,
+    "bundles": 4
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": true
+  },
+  "components": [
+    {
+      "tag": "my-app",
+      "dependencies": [],
+      "dependencyOf": []
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "entry:my-app",
+      "components": [
+        {
+          "tag": "my-app",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "8shyemdr.js",
+          "size": 673,
+          "outputs": [
+            "dist/stencil-app/8shyemdr.js",
+            "www/build/stencil-app/8shyemdr.js"
+          ]
+        },
+        {
+          "fileName": "8shyemdr.sc.js",
+          "size": 742,
+          "outputs": [
+            "dist/stencil-app/8shyemdr.sc.js",
+            "www/build/stencil-app/8shyemdr.sc.js"
+          ],
+          "scopedStyles": true
+        },
+        {
+          "fileName": "8shyemdr.es5.js",
+          "size": 1069,
+          "outputs": [
+            "dist/stencil-app/8shyemdr.es5.js",
+            "www/build/stencil-app/8shyemdr.es5.js"
+          ],
+          "target": "es5"
+        },
+        {
+          "fileName": "8shyemdr.sc.es5.js",
+          "size": 1138,
+          "outputs": [
+            "dist/stencil-app/8shyemdr.sc.es5.js",
+            "www/build/stencil-app/8shyemdr.sc.es5.js"
+          ],
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/my-app/my-app.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    }
+  ],
+  "sourceGraph": {
+    "src/components/my-app/my-app.tsx": []
+  },
+  "collections": []
+}

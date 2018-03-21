@@ -15,11 +15,13 @@
       "props": [
         {
           "name": "first",
-          "type": "String"
+          "type": "String",
+          "attr": "first"
         },
         {
           "name": "last",
-          "type": "String"
+          "type": "String",
+          "attr": "last"
         }
       ],
       "shadow": true
@@ -28,7 +30,8 @@
   "collections": [],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.6.8",
+    "version": "0.7.5",
     "typescriptVersion": "2.7.2"
-  }
+  },
+  "bundles": []
 }

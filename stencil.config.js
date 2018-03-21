@@ -1,17 +1,22 @@
+const path = require('path');
 const postcss = require('@stencil/postcss');
 const sass = require('@stencil/sass');
 
 exports.config = {
   namespace: 'stencil-app',
-  generateDistribution: true,
-  generateWWW: true,
-  serviceWorker: null,
+  outputTargets: [{
+    type: 'www'
+  }, {
+    type: 'dist'
+  }],
   plugins: [
-    sass(),
+    sass({
+      includePaths: [path.resolve(__dirname, 'src/scss')]
+    }),
     postcss({
       plugins: [
         require('autoprefixer')({
-          browsers: ['last 6 versions']
+          browsers: ['last 2 versions']
         }),
         require('cssnano')(),
         require('postcss-reporter')()
