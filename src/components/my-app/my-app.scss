@@ -3,9 +3,9 @@
 :host {
   display: flex;
 
-  @include createVariable(welcome, $black);
-  @include createVariable(welcome-large, $hot-pink);
-  @include createVariable(main, $yellow);
+  --welcome: $black;
+  --welcome-large: $hot-pink;
+  --main: $yellow;
 
   color: var(--main, $black);
 
