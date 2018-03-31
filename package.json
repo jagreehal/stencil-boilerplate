@@ -24,7 +24,7 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.7.9"
+    "@stencil/core": "0.7.10"
   },
   "devDependencies": {
     "@stencil/dev-server": "^0.0.18",
@@ -41,7 +41,7 @@
     "prettier": "^1.11.1",
     "stylelint": "^9.1.3",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^2.5.0",
+    "stylelint-scss": "^3.0.0",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "5.8.0",
     "tslint-config-prettier": "^1.10.0"
