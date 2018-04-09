@@ -30,7 +30,7 @@
   "collections": [],
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.7.12",
+    "version": "0.7.16",
     "typescriptVersion": "2.8.1"
   },
   "bundles": []
