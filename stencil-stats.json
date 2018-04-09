@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.7.12"
+    "version": "0.7.16"
   },
   "app": {
     "namespace": "StencilApp",
