@@ -11,6 +11,15 @@ export class MyApp {
     }
     static get is() { return "my-app"; }
     static get encapsulation() { return "shadow"; }
-    static get properties() { return { "first": { "type": String, "attr": "first" }, "last": { "type": String, "attr": "last" } }; }
+    static get properties() { return {
+        "first": {
+            "type": String,
+            "attr": "first"
+        },
+        "last": {
+            "type": String,
+            "attr": "last"
+        }
+    }; }
     static get style() { return "/**style-placeholder:my-app:**/"; }
 }

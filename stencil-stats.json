@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.7.16"
+    "version": "0.7.26"
   },
   "app": {
     "namespace": "StencilApp",
@@ -36,37 +36,37 @@
       ],
       "bundles": [
         {
-          "fileName": "8shyemdr.js",
-          "size": 673,
+          "fileName": "8ijkfipz.js",
+          "size": 694,
           "outputs": [
-            "dist/stencil-app/8shyemdr.js",
-            "www/build/stencil-app/8shyemdr.js"
+            "dist/stencil-app/8ijkfipz.js",
+            "www/build/stencil-app/8ijkfipz.js"
           ]
         },
         {
-          "fileName": "8shyemdr.sc.js",
-          "size": 742,
+          "fileName": "8ijkfipz.sc.js",
+          "size": 763,
           "outputs": [
-            "dist/stencil-app/8shyemdr.sc.js",
-            "www/build/stencil-app/8shyemdr.sc.js"
+            "dist/stencil-app/8ijkfipz.sc.js",
+            "www/build/stencil-app/8ijkfipz.sc.js"
           ],
           "scopedStyles": true
         },
         {
-          "fileName": "8shyemdr.es5.js",
-          "size": 1069,
+          "fileName": "8ijkfipz.es5.js",
+          "size": 1090,
           "outputs": [
-            "dist/stencil-app/8shyemdr.es5.js",
-            "www/build/stencil-app/8shyemdr.es5.js"
+            "dist/stencil-app/8ijkfipz.es5.js",
+            "www/build/stencil-app/8ijkfipz.es5.js"
           ],
           "target": "es5"
         },
         {
-          "fileName": "8shyemdr.sc.es5.js",
-          "size": 1138,
+          "fileName": "8ijkfipz.sc.es5.js",
+          "size": 1159,
           "outputs": [
-            "dist/stencil-app/8shyemdr.sc.es5.js",
-            "www/build/stencil-app/8shyemdr.sc.es5.js"
+            "dist/stencil-app/8ijkfipz.sc.es5.js",
+            "www/build/stencil-app/8ijkfipz.sc.es5.js"
           ],
           "target": "es5",
           "scopedStyles": true
