@@ -25,10 +25,16 @@ declare global {
 
 
 declare global {
-  interface HTMLMyAppElement extends HTMLStencilElement {
-    'first': string;
-    'last': string;
+
+  namespace StencilComponents {
+    interface MyApp {
+      'first': string;
+      'last': string;
+    }
   }
+
+  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+
   var HTMLMyAppElement: {
     prototype: HTMLMyAppElement;
     new (): HTMLMyAppElement;
