@@ -24,15 +24,15 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.7.26"
+    "@stencil/core": "0.8.0"
   },
   "devDependencies": {
     "@stencil/dev-server": "^0.0.18",
     "@stencil/postcss": "0.0.4",
-    "@stencil/sass": "0.0.3",
+    "@stencil/sass": "0.0.5",
     "@stencil/utils": "^0.0.4",
     "@types/jest": "^22.2.3",
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.4.1",
     "cssnano": "^3.10.0",
     "gh-pages": "1.1.0",
     "husky": "^0.15.0-rc.9",
@@ -41,7 +41,7 @@
     "prettier": "^1.12.1",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.0.1",
+    "stylelint-scss": "^3.1.0",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "5.8.0",
     "tslint-config-prettier": "^1.12.0"
