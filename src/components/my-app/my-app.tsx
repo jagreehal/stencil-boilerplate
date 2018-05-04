@@ -10,13 +10,10 @@ export class MyApp {
   @Prop() last: string;
 
   render() {
-    if (this.first && this.last) {
-      return (
-        <div>
-          <span class="welcome">Hello</span>, my name is {this.first}{' '}
-          {this.last}
-        </div>
-      );
-    }
+    return (
+      <div>
+        Hello, my name is {this.first} {this.last}
+      </div>
+    );
   }
 }
