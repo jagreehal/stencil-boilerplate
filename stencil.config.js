@@ -1,8 +1,12 @@
 const path = require('path');
-const postcss = require('@stencil/postcss');
 const sass = require('@stencil/sass');
 
 exports.config = {
+  autoprefixer: [
+    '> 1%',
+    'last 2 versions',
+    'IE 11'
+  ],
   namespace: 'stencil-app',
   outputTargets: [{
     type: 'www'
@@ -12,15 +16,6 @@ exports.config = {
   plugins: [
     sass({
       includePaths: [path.resolve(__dirname, 'src/scss')]
-    }),
-    postcss({
-      plugins: [
-        require('autoprefixer')({
-          browsers: ['last 2 versions']
-        }),
-        require('cssnano')(),
-        require('postcss-reporter')()
-      ]
     })
   ]
 };
