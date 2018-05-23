@@ -2,7 +2,8 @@
   "name": "stencil-app",
   "version": "1.0.0",
   "description": "Stencil boilerplate",
-  "main": "dist/stencil-app.js",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
@@ -24,24 +25,24 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.8.2"
+    "@stencil/core": "0.9.3"
   },
   "devDependencies": {
     "@stencil/dev-server": "^0.0.18",
     "@stencil/sass": "0.0.5",
     "@stencil/utils": "^0.0.4",
     "@types/jest": "^22.2.3",
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.5.0",
     "gh-pages": "1.1.0",
     "husky": "^0.15.0-rc.9",
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "prettier": "^1.12.1",
-    "stylelint": "^9.2.0",
+    "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.1.0",
     "tslint": "^5.10.0",
-    "tslint-config-airbnb": "5.8.0",
-    "tslint-config-prettier": "^1.12.0"
+    "tslint-config-airbnb": "5.9.2",
+    "tslint-config-prettier": "^1.13.0"
   },
   "husky": {
     "hooks": {

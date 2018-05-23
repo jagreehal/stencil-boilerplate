@@ -1,14 +1,14 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.7.26"
+    "version": "0.9.3"
   },
   "app": {
     "namespace": "StencilApp",
     "fsNamespace": "stencil-app",
     "components": 1,
     "entries": 1,
-    "bundles": 4
+    "bundles": 6
   },
   "options": {
     "minifyJs": true,
@@ -36,37 +36,54 @@
       ],
       "bundles": [
         {
-          "fileName": "8ijkfipz.js",
-          "size": 694,
+          "fileName": "0rgtf18l.js",
+          "size": 369,
           "outputs": [
-            "dist/stencil-app/8ijkfipz.js",
-            "www/build/stencil-app/8ijkfipz.js"
+            "dist/stencil-app/0rgtf18l.js",
+            "www/build/stencil-app/0rgtf18l.js"
           ]
         },
         {
-          "fileName": "8ijkfipz.sc.js",
-          "size": 763,
+          "fileName": "0rgtf18l.sc.js",
+          "size": 369,
           "outputs": [
-            "dist/stencil-app/8ijkfipz.sc.js",
-            "www/build/stencil-app/8ijkfipz.sc.js"
+            "dist/stencil-app/0rgtf18l.sc.js",
+            "www/build/stencil-app/0rgtf18l.sc.js"
           ],
           "scopedStyles": true
         },
         {
-          "fileName": "8ijkfipz.es5.js",
-          "size": 1090,
+          "fileName": "0rgtf18l.es5.js",
+          "size": 765,
           "outputs": [
-            "dist/stencil-app/8ijkfipz.es5.js",
-            "www/build/stencil-app/8ijkfipz.es5.js"
+            "dist/stencil-app/0rgtf18l.es5.js",
+            "www/build/stencil-app/0rgtf18l.es5.js"
           ],
           "target": "es5"
         },
         {
-          "fileName": "8ijkfipz.sc.es5.js",
-          "size": 1159,
+          "fileName": "0rgtf18l.sc.es5.js",
+          "size": 765,
           "outputs": [
-            "dist/stencil-app/8ijkfipz.sc.es5.js",
-            "www/build/stencil-app/8ijkfipz.sc.es5.js"
+            "dist/stencil-app/0rgtf18l.sc.es5.js",
+            "www/build/stencil-app/0rgtf18l.sc.es5.js"
+          ],
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "0rgtf18l.js",
+          "size": 680,
+          "outputs": [
+            "dist/esm/es5/0rgtf18l.js"
+          ],
+          "target": "es5"
+        },
+        {
+          "fileName": "0rgtf18l.sc.js",
+          "size": 680,
+          "outputs": [
+            "dist/esm/es5/0rgtf18l.sc.js"
           ],
           "target": "es5",
           "scopedStyles": true
