@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.9.3"
+    "version": "0.9.7"
   },
   "app": {
     "namespace": "StencilApp",
@@ -37,54 +37,60 @@
       "bundles": [
         {
           "fileName": "0rgtf18l.js",
-          "size": 369,
           "outputs": [
             "dist/stencil-app/0rgtf18l.js",
             "www/build/stencil-app/0rgtf18l.js"
-          ]
+          ],
+          "size": 369,
+          "gzip": 243
         },
         {
           "fileName": "0rgtf18l.sc.js",
-          "size": 369,
           "outputs": [
             "dist/stencil-app/0rgtf18l.sc.js",
             "www/build/stencil-app/0rgtf18l.sc.js"
           ],
+          "size": 369,
+          "gzip": 243,
           "scopedStyles": true
         },
         {
           "fileName": "0rgtf18l.es5.js",
-          "size": 765,
           "outputs": [
             "dist/stencil-app/0rgtf18l.es5.js",
             "www/build/stencil-app/0rgtf18l.es5.js"
           ],
+          "size": 765,
+          "gzip": 347,
           "target": "es5"
         },
         {
           "fileName": "0rgtf18l.sc.es5.js",
-          "size": 765,
           "outputs": [
             "dist/stencil-app/0rgtf18l.sc.es5.js",
             "www/build/stencil-app/0rgtf18l.sc.es5.js"
           ],
+          "size": 765,
+          "gzip": 347,
           "target": "es5",
           "scopedStyles": true
         },
         {
           "fileName": "0rgtf18l.js",
-          "size": 680,
           "outputs": [
             "dist/esm/es5/0rgtf18l.js"
           ],
+          "size": 680,
+          "gzip": 308,
           "target": "es5"
         },
         {
           "fileName": "0rgtf18l.sc.js",
-          "size": 680,
           "outputs": [
             "dist/esm/es5/0rgtf18l.sc.js"
           ],
+          "size": 680,
+          "gzip": 308,
           "target": "es5",
           "scopedStyles": true
         }
