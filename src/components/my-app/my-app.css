@@ -1,0 +1,14 @@
+@custom-media --large-viewport (min-width: 1000px);
+
+:host {
+  color: var(--main, #ffd700);
+  display: flex;
+}
+
+.welcome {
+  color: var(--welcome, #000);
+
+  @media (--large-viewport) {
+    color: var(--welcome-large, #ff41b4);
+  }
+}

@@ -2,7 +2,7 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'my-app',
-  styleUrl: 'my-app.scss',
+  styleUrl: 'my-app.css',
   shadow: true
 })
 export class MyApp {
@@ -12,7 +12,7 @@ export class MyApp {
   render() {
     return (
       <div>
-        Hello, my name is {this.first} {this.last}
+        <span class="welcome">Hello</span>, my name is {this.first} {this.last}
       </div>
     );
   }

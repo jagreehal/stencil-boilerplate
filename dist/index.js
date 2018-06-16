@@ -1,1 +1,0 @@
-// StencilApp: CommonJS Main
