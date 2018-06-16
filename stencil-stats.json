@@ -36,61 +36,61 @@
       ],
       "bundles": [
         {
-          "fileName": "0rgtf18l.js",
+          "fileName": "hsqcy5gd.js",
           "outputs": [
-            "dist/stencil-app/0rgtf18l.js",
-            "www/build/stencil-app/0rgtf18l.js"
+            "dist/stencil-app/hsqcy5gd.js",
+            "www/build/stencil-app/hsqcy5gd.js"
           ],
-          "size": 369,
-          "gzip": 243
+          "size": 641,
+          "gzip": 383
         },
         {
-          "fileName": "0rgtf18l.sc.js",
+          "fileName": "hsqcy5gd.sc.js",
           "outputs": [
-            "dist/stencil-app/0rgtf18l.sc.js",
-            "www/build/stencil-app/0rgtf18l.sc.js"
+            "dist/stencil-app/hsqcy5gd.sc.js",
+            "www/build/stencil-app/hsqcy5gd.sc.js"
           ],
-          "size": 369,
-          "gzip": 243,
+          "size": 680,
+          "gzip": 395,
           "scopedStyles": true
         },
         {
-          "fileName": "0rgtf18l.es5.js",
+          "fileName": "hsqcy5gd.es5.js",
           "outputs": [
-            "dist/stencil-app/0rgtf18l.es5.js",
-            "www/build/stencil-app/0rgtf18l.es5.js"
+            "dist/stencil-app/hsqcy5gd.es5.js",
+            "www/build/stencil-app/hsqcy5gd.es5.js"
           ],
-          "size": 765,
-          "gzip": 347,
+          "size": 1037,
+          "gzip": 490,
           "target": "es5"
         },
         {
-          "fileName": "0rgtf18l.sc.es5.js",
+          "fileName": "hsqcy5gd.sc.es5.js",
           "outputs": [
-            "dist/stencil-app/0rgtf18l.sc.es5.js",
-            "www/build/stencil-app/0rgtf18l.sc.es5.js"
+            "dist/stencil-app/hsqcy5gd.sc.es5.js",
+            "www/build/stencil-app/hsqcy5gd.sc.es5.js"
           ],
-          "size": 765,
-          "gzip": 347,
+          "size": 1076,
+          "gzip": 500,
           "target": "es5",
           "scopedStyles": true
         },
         {
-          "fileName": "0rgtf18l.js",
+          "fileName": "hsqcy5gd.js",
           "outputs": [
-            "dist/esm/es5/0rgtf18l.js"
+            "dist/esm/es5/hsqcy5gd.js"
           ],
-          "size": 680,
-          "gzip": 308,
+          "size": 952,
+          "gzip": 450,
           "target": "es5"
         },
         {
-          "fileName": "0rgtf18l.sc.js",
+          "fileName": "hsqcy5gd.sc.js",
           "outputs": [
-            "dist/esm/es5/0rgtf18l.sc.js"
+            "dist/esm/es5/hsqcy5gd.sc.js"
           ],
-          "size": 680,
-          "gzip": 308,
+          "size": 991,
+          "gzip": 461,
           "target": "es5",
           "scopedStyles": true
         }
@@ -104,6 +104,10 @@
     }
   ],
   "sourceGraph": {
+    "src/components/my-app/my-app.stories.tsx": [
+      "@storybook/addon-knobs",
+      "@storybook/html"
+    ],
     "src/components/my-app/my-app.tsx": []
   },
   "collections": []

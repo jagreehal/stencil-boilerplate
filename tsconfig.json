@@ -8,6 +8,8 @@
       "dom",
       "es2015"
     ],
+    "sourceMap": true,
+    "allowJs": false,
     "moduleResolution": "node",
     "module": "es2015",
     "target": "es2015",

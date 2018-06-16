@@ -1,8 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "[scss]": {
-    "editor.formatOnSave": false
-  },
   "files.associations": {
     "*.css": "postcss"
   },
