@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.9.7"
+    "version": "0.9.11"
   },
   "app": {
     "namespace": "StencilApp",
@@ -96,7 +96,7 @@
         }
       ],
       "inputs": [
-        "dist/collection/components/my-app/my-app.js"
+        "src/components/my-app/my-app.js"
       ],
       "encapsulations": [
         "shadow"
@@ -104,10 +104,7 @@
     }
   ],
   "sourceGraph": {
-    "src/components/my-app/my-app.stories.tsx": [
-      "@storybook/addon-knobs",
-      "@storybook/html"
-    ],
+    "src/components/my-app/my-app.stories.tsx": [],
     "src/components/my-app/my-app.tsx": []
   },
   "collections": []
