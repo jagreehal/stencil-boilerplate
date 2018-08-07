@@ -28,10 +28,10 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.10.4"
+    "@stencil/core": "0.11.2"
   },
   "devDependencies": {
-    "@stencil/postcss": "0.0.4",
+    "@stencil/postcss": "0.1.0",
     "@stencil/utils": "^0.0.4",
     "@storybook/addon-a11y": "4.0.0-alpha.9",
     "@storybook/addon-actions": "4.0.0-alpha.9",
@@ -50,8 +50,8 @@
     "@storybook/core": "4.0.0-alpha.9",
     "@storybook/core-events": "4.0.0-alpha.11",
     "@storybook/html": "4.0.0-alpha.11",
-    "@types/jest": "^23.1.5",
-    "autoprefixer": "^8.6.5",
+    "@types/jest": "^23.3.1",
+    "autoprefixer": "^9.1.0",
     "awesome-typescript-loader": "^5.2.0",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
@@ -60,17 +60,17 @@
     "gh-pages": "1.2.0",
     "global": "^4.3.2",
     "husky": "^0.15.0-rc.9",
-    "jest": "^23.4.0",
+    "jest": "^23.4.2",
     "postcss-custom-media": "^6.0.0",
     "postcss-import-url": "^3.0.4",
     "postcss-nested": "^3.0.0",
     "postcss-reporter": "^5.0.0",
-    "prettier": "^1.13.7",
-    "stylelint": "^9.3.0",
+    "prettier": "^1.14.0",
+    "stylelint": "^9.4.0",
     "stylelint-config-standard": "^18.2.0",
-    "tslint": "^5.10.0",
+    "tslint": "^5.11.0",
     "tslint-config-airbnb": "5.9.2",
-    "tslint-config-prettier": "^1.13.0"
+    "tslint-config-prettier": "^1.14.0"
   },
   "husky": {
     "hooks": {
