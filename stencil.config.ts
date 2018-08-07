@@ -1,5 +1,7 @@
 const path = require('path');
-const postcss = require('@stencil/postcss');
+const {
+  postcss
+} = require('@stencil/postcss');
 
 exports.config = {
   namespace: 'stencil-app',
