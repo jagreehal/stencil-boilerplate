@@ -38,7 +38,7 @@
     "@storybook/addon-backgrounds": "4.0.0-alpha.11",
     "@storybook/addon-centered": "4.0.0-alpha.11",
     "@storybook/addon-events": "4.0.0-alpha.9",
-    "@storybook/addon-jest": "4.0.0-alpha.9",
+    "@storybook/addon-jest": "4.0.0-alpha.11",
     "@storybook/addon-knobs": "4.0.0-alpha.11",
     "@storybook/addon-links": "4.0.0-alpha.11",
     "@storybook/addon-notes": "4.0.0-alpha.11",
