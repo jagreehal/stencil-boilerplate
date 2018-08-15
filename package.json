@@ -34,7 +34,7 @@
     "@stencil/postcss": "0.1.0",
     "@stencil/utils": "^0.0.4",
     "@storybook/addon-a11y": "4.0.0-alpha.9",
-    "@storybook/addon-actions": "4.0.0-alpha.9",
+    "@storybook/addon-actions": "4.0.0-alpha.11",
     "@storybook/addon-backgrounds": "4.0.0-alpha.9",
     "@storybook/addon-centered": "4.0.0-alpha.11",
     "@storybook/addon-events": "4.0.0-alpha.9",
