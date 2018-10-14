@@ -22,6 +22,7 @@
     "serve.prod": "npm run build && serve ./www",
     "start": "sd concurrent \"npm run dev\" \"npm run storybook\"",
     "storybook": "start-storybook -p 9006 -s www",
+    "stylelint:fix": "stylelint --fix \"src/**/*.css\"",
     "test": "stencil test --spec --e2e --headless",
     "test.ci": "stencil test --spec --e2e --ci",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -32,7 +33,7 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.13.2"
+    "@stencil/core": "v0.14.0-5"
   },
   "devDependencies": {
     "@stencil/postcss": "0.1.0",
