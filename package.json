@@ -22,6 +22,7 @@
     "serve.prod": "npm run build && serve ./www",
     "start": "sd concurrent \"npm run dev\" \"npm run storybook\"",
     "storybook": "start-storybook -p 9006 -s www",
+    "stylelint:fix": "stylelint --fix \"src/**/*.css\"",
     "test": "stencil test --spec --e2e --headless",
     "test.ci": "stencil test --spec --e2e --ci",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -32,7 +33,7 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "0.13.2"
+    "@stencil/core": "v0.14.0-5"
   },
   "devDependencies": {
     "@stencil/postcss": "0.1.0",
@@ -67,13 +68,14 @@
     "global": "^4.3.2",
     "husky": "^1.1.1",
     "jest": "23.6.0",
+    "jest-cli": "23.6.0",
     "pixelmatch": "4.0.2",
     "postcss-custom-media": "^7.0.4",
     "postcss-import-url": "^3.0.4",
     "postcss-nested": "^4.1.0",
     "postcss-reporter": "^6.0.0",
     "prettier": "^1.14.3",
-    "puppeteer": "1.9.0",
+    "puppeteer": "1.8.0",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "tslint": "^5.11.0",

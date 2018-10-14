@@ -1,31 +1,26 @@
-const path = require('path');
-const {
-  postcss
-} = require('@stencil/postcss');
+import { Config } from '@stencil/core';
+import { postcss } from '@stencil/postcss';
 
-exports.config = {
+export const config: Config = {
   namespace: 'stencil-app',
-  outputTargets: [{
-    type: 'www'
-  }, {
-    type: 'dist'
-  }],
+  outputTargets: [
+    {
+      type: 'www'
+    },
+    {
+      type: 'dist'
+    }
+  ],
   plugins: [
     postcss({
       plugins: [
         require('stylelint')(),
-        require("postcss-custom-media")({
+        require('postcss-custom-media')({
           preserve: true
         }),
         require('postcss-nested'),
         require('postcss-import-url')(),
-        require('autoprefixer')(
-          [
-            '> 1%',
-            'last 2 versions',
-            'IE 11'
-          ]
-        ),
+        require('autoprefixer')(['> 1%', 'last 2 versions', 'IE 11']),
         require('postcss-reporter')({
           clearReportedMessages: true
         })
