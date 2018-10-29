@@ -33,7 +33,7 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "dependencies": {
-    "@stencil/core": "v0.14.0-5"
+    "@stencil/core": "0.14.0"
   },
   "devDependencies": {
     "@stencil/postcss": "0.1.0",
@@ -53,10 +53,10 @@
     "@storybook/addon-viewport": "4.0.0",
     "@storybook/addons": "4.0.0",
     "@storybook/core": "4.0.0",
-    "@storybook/core-events": "4.0.0-alpha.23",
-    "@storybook/html": "4.0.0-alpha.23",
+    "@storybook/core-events": "4.0.0",
+    "@storybook/html": "4.0.0",
     "@types/jest": "^23.3.3",
-    "@types/puppeteer": "1.9.0",
+    "@types/puppeteer": "1.9.1",
     "autoprefixer": "^9.1.5",
     "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
