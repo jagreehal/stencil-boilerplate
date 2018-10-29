@@ -41,7 +41,7 @@
     "@storybook/addon-a11y": "4.0.0-alpha.23",
     "@storybook/addon-actions": "4.0.0-alpha.23",
     "@storybook/addon-backgrounds": "4.0.0-alpha.23",
-    "@storybook/addon-centered": "4.0.0-alpha.23",
+    "@storybook/addon-centered": "4.0.0",
     "@storybook/addon-events": "4.0.0-alpha.23",
     "@storybook/addon-jest": "4.0.0-alpha.23",
     "@storybook/addon-knobs": "4.0.0-alpha.10",
