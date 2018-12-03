@@ -53,7 +53,7 @@
     "@storybook/addon-viewport": "^4.0.10",
     "@storybook/addons": "^4.0.10",
     "@storybook/core": "^4.0.10",
-    "@storybook/core-events": "4.0.10",
+    "@storybook/core-events": "4.0.11",
     "@storybook/html": "4.0.10",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.11",
