@@ -72,7 +72,7 @@
     "jest-cli": "23.6.0",
     "pixelmatch": "4.0.2",
     "postcss-custom-media": "^7.0.7",
-    "postcss-import-url": "^3.0.4",
+    "postcss-import-url": "^4.0.0",
     "postcss-nested": "^4.1.0",
     "postcss-reporter": "^6.0.0",
     "prettier": "^1.15.3",
