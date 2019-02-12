@@ -56,7 +56,7 @@
     "@storybook/core-events": "4.0.10",
     "@storybook/html": "4.0.10",
     "@types/jest": "^23.3.10",
-    "@types/node": "^10.12.11",
+    "@types/node": "^11.9.0",
     "@types/puppeteer": "^1.10.1",
     "autoprefixer": "^9.3.1",
     "awesome-typescript-loader": "^5.2.1",
