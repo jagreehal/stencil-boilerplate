@@ -38,7 +38,7 @@
   "devDependencies": {
     "@stencil/postcss": "^0.1.0",
     "@stencil/utils": "^0.0.5",
-    "@storybook/addon-a11y": "^4.0.10",
+    "@storybook/addon-a11y": "^5.0.0",
     "@storybook/addon-actions": "^5.0.0",
     "@storybook/addon-backgrounds": "^5.0.0",
     "@storybook/addon-centered": "^5.0.0",
