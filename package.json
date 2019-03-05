@@ -43,7 +43,7 @@
     "@storybook/addon-backgrounds": "^5.0.0",
     "@storybook/addon-centered": "^5.0.0",
     "@storybook/addon-events": "^4.0.10",
-    "@storybook/addon-jest": "^4.0.10",
+    "@storybook/addon-jest": "^5.0.0",
     "@storybook/addon-knobs": "^5.0.0",
     "@storybook/addon-links": "^5.0.0",
     "@storybook/addon-notes": "^5.0.0",
