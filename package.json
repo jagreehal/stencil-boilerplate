@@ -67,7 +67,7 @@
     "format-json": "^1.0.3",
     "gh-pages": "2.0.1",
     "global": "^4.3.2",
-    "husky": "^1.2.0",
+    "husky": "^2.0.0",
     "jest": "23.6.0",
     "jest-cli": "23.6.0",
     "pixelmatch": "4.0.2",
