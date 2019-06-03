@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stencil App</title>
+    <meta name="Description" content="Stencil App Example" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="theme-color" content="#16161d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Stencil App</title>
-  <meta name="Description" content="Stencil App Example">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <meta name="theme-color" content="#16161d">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
 
-  <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <script type="module" src="/build/stencil-app.esm.js"></script>
+    <script nomodule src="/build/stencil-app.js"></script>
 
-  <script src="build/stencil-app.js"></script>
+    <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      .styled {
+        --main: red;
+        --welcome: orange;
+      }
+    </style>
+  </head>
 
-  <link rel="apple-touch-icon" href="/assets/icon/icon.png">
-  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
-  <link rel="manifest" href="/manifest.json">
-  <style>
-    .styled {
-      --main: red;
-      --welcome: orange;
-    }
-  </style>
-
-</head>
-
-<body>
-  <h4>default</h4>
-  <my-app first="Jag" last="Reehal"></my-app>
-  <h4>styled</h4>
-  <my-app class="styled" first="Jag" last="Reehal"></my-app>
-</body>
-
+  <body>
+    <h4>default</h4>
+    <my-app first="Jag" last="Reehal"></my-app>
+    <h4>styled</h4>
+    <my-app class="styled" first="Jag" last="Reehal"></my-app>
+  </body>
 </html>

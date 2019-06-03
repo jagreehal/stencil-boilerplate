@@ -1,21 +1,25 @@
 const path = require('path');
+const webpack = require('webpack');
 
-module.exports = (storybookBaseConfig, configType, defaultConfig) => {
-  defaultConfig.module.rules.push({
-    test: [/\.(js)$/],
-    loaders: [require.resolve('@storybook/addon-storysource/loader')],
-    enforce: 'pre',
-  });
+module.exports = ({ config, mode }) => {
+  config = Object.assign(
+    {
+      module: {
+        rules: []
+      },
+      plugins: []
+    },
+    config || {}
+  );
 
-  defaultConfig.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    loaders: [
-      require.resolve('@storybook/addon-storysource/loader'),
-      require.resolve("awesome-typescript-loader")
-    ],
-    enforce: 'pre'
-  });
-  defaultConfig.resolve.extensions.push(".ts", ".tsx");
+  // SCSS support
+  // You'll need to npm install the loaders
+  // npm install -D style-loader css-loader sass-loader
+  // Then import your .scss into the stories/XXXX.stories.js file
 
-  return defaultConfig;
+  config.plugins = config.plugins.filter(
+    plugin => !(plugin instanceof webpack.DefinePlugin)
+  );
+
+  return config;
 };
