@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Stencil App</title>
-    <meta name="Description" content="Stencil App Example" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
-    />
-    <meta name="theme-color" content="#16161d" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<head>
+  <meta charset="utf-8" />
+  <title>Stencil App</title>
+  <meta name="Description" content="Stencil App Example" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#16161d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <script type="module" src="/build/stencil-app.esm.js"></script>
-    <script nomodule src="/build/stencil-app.js"></script>
+  <meta http-equiv="x-ua-compatible" content="IE=Edge" />
 
-    <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
-    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <style>
-      .styled {
-        --main: red;
-        --welcome: orange;
-      }
-    </style>
-  </head>
+  <link href="/build/stencil-app.css" rel="stylesheet" />
+  <script type="module" src="/build/stencil-app.esm.js"></script>
+  <script nomodule src="/build/stencil-app.js"></script>
 
-  <body>
-    <h4>default</h4>
-    <my-app first="Jag" last="Reehal"></my-app>
-    <h4>styled</h4>
-    <my-app class="styled" first="Jag" last="Reehal"></my-app>
-  </body>
+  <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+</head>
+
+<body class="antialiased flex items-center justify-center min-h-screen">
+  <my-app first="Jag" last="Reehal"></my-app>
+</body>
+
 </html>

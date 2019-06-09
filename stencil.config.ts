@@ -1,11 +1,20 @@
 import { Config } from '@stencil/core';
 import { postcss } from '@stencil/postcss';
+import autoprefixer from 'autoprefixer';
+
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: ['./src/**/*.tsx', './src/index.html'],
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+});
 
 export const config: Config = {
+  globalStyle: 'src/global/app.css',
   namespace: 'stencil-app',
   outputTargets: [
     {
-      type: 'www'
+      type: 'www',      
+      serviceWorker: null,
+      baseUrl: 'http://localhost:5000'
     },
     {
       type: 'dist'
@@ -14,10 +23,11 @@ export const config: Config = {
   plugins: [
     postcss({
       plugins: [
-        require('stylelint')(),
-        require('postcss-reporter')({
-          clearReportedMessages: true
-        })
+        require('tailwindcss')('./tailwind.config.js'),
+        autoprefixer(),
+        ...(process.env.NODE_ENV === 'production'
+          ? [purgecss, require('cssnano')]
+          : [])
       ]
     })
   ]

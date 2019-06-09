@@ -1,14 +1,14 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.9.11"
+    "version": "1.0.2"
   },
   "app": {
     "namespace": "StencilApp",
     "fsNamespace": "stencil-app",
     "components": 1,
     "entries": 1,
-    "bundles": 6
+    "bundles": 0
   },
   "options": {
     "minifyJs": true,
@@ -20,83 +20,26 @@
   "components": [
     {
       "tag": "my-app",
-      "dependencies": [],
-      "dependencyOf": []
+      "dependencyOf": [],
+      "dependencies": []
     }
   ],
   "entries": [
     {
-      "entryId": "entry:my-app",
+      "entryId": "my-app.entry",
       "components": [
         {
           "tag": "my-app",
-          "dependencies": [],
-          "dependencyOf": []
+          "dependencyOf": [],
+          "dependencies": []
         }
       ],
-      "bundles": [
-        {
-          "fileName": "hsqcy5gd.js",
-          "outputs": [
-            "dist/stencil-app/hsqcy5gd.js",
-            "www/build/stencil-app/hsqcy5gd.js"
-          ],
-          "size": 641,
-          "gzip": 383
-        },
-        {
-          "fileName": "hsqcy5gd.sc.js",
-          "outputs": [
-            "dist/stencil-app/hsqcy5gd.sc.js",
-            "www/build/stencil-app/hsqcy5gd.sc.js"
-          ],
-          "size": 680,
-          "gzip": 395,
-          "scopedStyles": true
-        },
-        {
-          "fileName": "hsqcy5gd.es5.js",
-          "outputs": [
-            "dist/stencil-app/hsqcy5gd.es5.js",
-            "www/build/stencil-app/hsqcy5gd.es5.js"
-          ],
-          "size": 1037,
-          "gzip": 490,
-          "target": "es5"
-        },
-        {
-          "fileName": "hsqcy5gd.sc.es5.js",
-          "outputs": [
-            "dist/stencil-app/hsqcy5gd.sc.es5.js",
-            "www/build/stencil-app/hsqcy5gd.sc.es5.js"
-          ],
-          "size": 1076,
-          "gzip": 500,
-          "target": "es5",
-          "scopedStyles": true
-        },
-        {
-          "fileName": "hsqcy5gd.js",
-          "outputs": [
-            "dist/esm/es5/hsqcy5gd.js"
-          ],
-          "size": 952,
-          "gzip": 450,
-          "target": "es5"
-        },
-        {
-          "fileName": "hsqcy5gd.sc.js",
-          "outputs": [
-            "dist/esm/es5/hsqcy5gd.sc.js"
-          ],
-          "size": 991,
-          "gzip": 461,
-          "target": "es5",
-          "scopedStyles": true
-        }
-      ],
+      "bundles": [],
       "inputs": [
-        "src/components/my-app/my-app.js"
+        "/Users/jreehal/MEGA/js/s/stencil-boilerplate/src/components/my-app/my-app.tsx"
+      ],
+      "modes": [
+        "$"
       ],
       "encapsulations": [
         "shadow"
