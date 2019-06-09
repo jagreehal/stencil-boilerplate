@@ -1,14 +1,13 @@
-@custom-media --large-viewport (min-width: 1000px);
-
 :host {
-  color: var(--main, #ffd700);
-  display: flex;
+  @apply flex text-blue-500;
 }
 
 .welcome {
-  color: var(--welcome, #000);
+  @apply text-black;
+}
 
-  @media (--large-viewport) {
-    color: var(--welcome-large, #ff41b4);
+@screen md {
+  .welcome {
+    @apply text-red-500;
   }
 }

@@ -5,31 +5,17 @@
  */
 
 
-import '@stencil/core';
-
-
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-
   interface MyApp {
     'first': string;
     'last': string;
   }
-  interface MyAppAttributes extends StencilHTMLAttributes {
-    'first'?: string;
-    'last'?: string;
-  }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'MyApp': Components.MyApp;
-  }
-
-  interface StencilIntrinsicElements {
-    'my-app': Components.MyAppAttributes;
-  }
 
 
   interface HTMLMyAppElement extends Components.MyApp, HTMLStencilElement {}
@@ -37,22 +23,29 @@ declare global {
     prototype: HTMLMyAppElement;
     new (): HTMLMyAppElement;
   };
-
   interface HTMLElementTagNameMap {
-    'my-app': HTMLMyAppElement
-  }
-
-  interface ElementTagNameMap {
     'my-app': HTMLMyAppElement;
   }
-
-
-  export namespace JSX {
-    export interface Element {}
-    export interface IntrinsicElements extends StencilIntrinsicElements {
-      [tagName: string]: any;
-    }
-  }
-  export interface HTMLAttributes extends StencilHTMLAttributes {}
-
 }
+
+declare namespace LocalJSX {
+  interface MyApp extends JSXBase.HTMLAttributes<HTMLMyAppElement> {
+    'first'?: string;
+    'last'?: string;
+  }
+
+  interface IntrinsicElements {
+    'my-app': MyApp;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+
