@@ -37,7 +37,7 @@
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@stencil/postcss": "^1.0.1",
     "@storybook/addon-a11y": "^5.1.5",
-    "@storybook/addon-knobs": "^5.1.4",
+    "@storybook/addon-knobs": "^5.1.5",
     "@storybook/addon-viewport": "^5.1.4",
     "@storybook/html": "5.1.4",
     "@types/autoprefixer": "^9.5.0",
