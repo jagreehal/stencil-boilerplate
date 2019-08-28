@@ -1,0 +1,21 @@
+{
+  "id": "20190807191042",
+  "message": "Build: 2019-08-07 19:10:42",
+  "appNamespace": "StencilApp",
+  "timestamp": 1565201442662,
+  "screenshots": [
+    {
+      "id": "cdfd01aa",
+      "image": "9df2cc58e708eef61691122948bef3a0.png",
+      "userAgent": "default",
+      "desc": "testing-e2e should match screenshot, MyApp screenshot",
+      "testPath": "src/components/my-app/my-app.spec.e2e.ts",
+      "width": 600,
+      "height": 600,
+      "deviceScaleFactor": 1,
+      "hasTouch": false,
+      "isLandscape": false,
+      "isMobile": false
+    }
+  ]
+}

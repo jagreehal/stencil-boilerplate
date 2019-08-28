@@ -1,0 +1,25 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Local StencilApp - Stencil Screenshot Visual Diff</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <link href="../node_modules/@stencil/core/screenshot/compare/build/app.css" rel="stylesheet">
+  <script src="../node_modules/@stencil/core/screenshot/compare/build/app.js"></script>
+  <link rel="icon" type="image/x-icon" href="../node_modules/@stencil/core/screenshot/compare/assets/favicon.ico">
+</head>
+<body>
+  <script>
+    (function() {
+      var app = document.createElement('screenshot-compare');
+      app.appSrcUrl = '../node_modules/@stencil/core/screenshot/compare';
+      app.imagesUrl = 'images/';
+      app.jsonpUrl = '../.stencil/';
+      app.a = {"id":"20190807191042","message":"Build: 2019-08-07 19:10:42","appNamespace":"StencilApp","timestamp":1565201442662,"screenshots":[{"id":"cdfd01aa","image":"9df2cc58e708eef61691122948bef3a0.png","userAgent":"default","desc":"testing-e2e should match screenshot, MyApp screenshot","testPath":"src/components/my-app/my-app.spec.e2e.ts","width":600,"height":600,"deviceScaleFactor":1,"hasTouch":false,"isLandscape":false,"isMobile":false}]};
+      app.b = {"id":"20190807191950","message":"Build: 2019-08-07 19:19:50","appNamespace":"StencilApp","timestamp":1565201990165,"screenshots":[{"id":"cdfd01aa","image":"9df2cc58e708eef61691122948bef3a0.png","userAgent":"default","desc":"testing-e2e should match screenshot, MyApp screenshot","testPath":"src/components/my-app/my-app.spec.e2e.ts","width":600,"height":600,"deviceScaleFactor":1,"hasTouch":false,"isLandscape":false,"isMobile":false}]};
+      document.body.appendChild(app);
+    })();
+  </script>
+</body>
+</html>
