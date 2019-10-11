@@ -29,7 +29,7 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface MyApp extends JSXBase.HTMLAttributes<HTMLMyAppElement> {
+  interface MyApp {
     'first'?: string;
     'last'?: string;
   }
@@ -44,7 +44,9 @@ export { LocalJSX as JSX };
 
 declare module "@stencil/core" {
   export namespace JSX {
-    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+    interface IntrinsicElements {
+      'my-app': LocalJSX.MyApp & JSXBase.HTMLAttributes<HTMLMyAppElement>;
+    }
   }
 }
 
