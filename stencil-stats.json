@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.0.2"
+    "version": "0.0.0-stencil-dev"
   },
   "app": {
     "namespace": "StencilApp",
@@ -48,7 +48,8 @@
   ],
   "sourceGraph": {
     "src/components/my-app/my-app.stories.tsx": [],
-    "src/components/my-app/my-app.tsx": []
+    "src/components/my-app/my-app.tsx": [],
+    "src/customElementDocGenerator.ts": []
   },
   "collections": []
 }

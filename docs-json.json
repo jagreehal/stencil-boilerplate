@@ -1,0 +1,60 @@
+{
+  "timestamp": "2019-12-17T20:58:25",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.0.0-stencil-dev",
+    "typescriptVersion": "3.7.3"
+  },
+  "components": [
+    {
+      "filePath": "src/components/my-app/my-app.tsx",
+      "encapsulation": "shadow",
+      "tag": "my-app",
+      "readme": "# my-app\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "first",
+          "type": "string",
+          "mutable": false,
+          "attr": "first",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "last",
+          "type": "string",
+          "mutable": false,
+          "attr": "last",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": [],
+      "slots": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}
