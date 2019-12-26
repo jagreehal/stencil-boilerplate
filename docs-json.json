@@ -1,15 +1,15 @@
 {
-  "timestamp": "2019-12-17T20:58:25",
+  "timestamp": "2019-12-26T12:36:26",
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.0.0-stencil-dev",
-    "typescriptVersion": "3.7.3"
+    "version": "1.8.2",
+    "typescriptVersion": "3.7.2"
   },
   "components": [
     {
-      "filePath": "src/components/my-app/my-app.tsx",
+      "filePath": "src/components/my-component/my-component.tsx",
       "encapsulation": "shadow",
-      "tag": "my-app",
+      "tag": "my-component",
       "readme": "# my-app\n\n\n",
       "docs": "",
       "docsTags": [],

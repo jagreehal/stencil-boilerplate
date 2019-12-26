@@ -1,7 +1,7 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.0.0-stencil-dev"
+    "version": "1.8.2"
   },
   "app": {
     "namespace": "StencilApp",
@@ -19,24 +19,24 @@
   },
   "components": [
     {
-      "tag": "my-app",
+      "tag": "my-component",
       "dependencyOf": [],
       "dependencies": []
     }
   ],
   "entries": [
     {
-      "entryId": "my-app.entry",
+      "entryId": "my-component.entry",
       "components": [
         {
-          "tag": "my-app",
+          "tag": "my-component",
           "dependencyOf": [],
           "dependencies": []
         }
       ],
       "bundles": [],
       "inputs": [
-        "/Users/jreehal/MEGA/js/s/stencil-boilerplate/src/components/my-app/my-app.tsx"
+        "/Users/jreehal/MEGA/js/s/stencil-boilerplate/src/components/my-component/my-component.tsx"
       ],
       "modes": [
         "$"
@@ -47,8 +47,8 @@
     }
   ],
   "sourceGraph": {
-    "src/components/my-app/my-app.stories.tsx": [],
-    "src/components/my-app/my-app.tsx": [],
+    "src/components/my-component/my-component.stories.tsx": [],
+    "src/components/my-component/my-component.tsx": [],
     "src/customElementDocGenerator.ts": []
   },
   "collections": []

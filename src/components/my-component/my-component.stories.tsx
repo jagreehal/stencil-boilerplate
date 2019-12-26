@@ -4,16 +4,14 @@ import { html } from "lit-html";
 
 export default {
   title: "Component",
-  decorators: [withKnobs, withA11y],
-  parameters: {
-    options: { selectedPanel: "storybook/a11y/panel" }
-  }
+  component: "my-component",
+  decorators: [withKnobs, withA11y]
 };
 
-export const MyApp = () => {
+export const MyComponent = () => {
   const first = text("First", "Jag");
   const last = text("Last", "Reehal");
   return html`
-    <my-app first="${first}" last="${last}"></my-app>
+    <my-component first="${first}" last="${last}"></my-component>
   `;
 };
