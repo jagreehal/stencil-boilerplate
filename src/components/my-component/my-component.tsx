@@ -6,10 +6,15 @@ import { Component, h, Prop } from "@stencil/core";
   styleUrl: "./my-component.css"
 })
 export class MyComponent {
-  @Prop()
-  first: string;
-  @Prop()
-  last: string;
+  /**
+   * the first name
+   */
+  @Prop() first: string;
+
+  /**
+   * the last name
+   */
+  @Prop() last: string;
 
   render() {
     return (

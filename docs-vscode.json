@@ -10,11 +10,11 @@
       "attributes": [
         {
           "name": "first",
-          "description": ""
+          "description": "the first name"
         },
         {
           "name": "last",
-          "description": ""
+          "description": "the last name"
         }
       ]
     }
