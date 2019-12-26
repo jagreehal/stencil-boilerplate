@@ -1,6 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "tslint.autoFixOnSave": true,
   "files.associations": {
     "*.css": "postcss"
   },

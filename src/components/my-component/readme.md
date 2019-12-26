@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `first`  | `first`   |             | `string` | `undefined` |
-| `last`   | `last`    |             | `string` | `undefined` |
+| Property | Attribute | Description    | Type     | Default     |
+| -------- | --------- | -------------- | -------- | ----------- |
+| `first`  | `first`   | the first name | `string` | `undefined` |
+| `last`   | `last`    | the last name  | `string` | `undefined` |
 
 
 ----------------------------------------------

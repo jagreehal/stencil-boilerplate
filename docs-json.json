@@ -1,5 +1,5 @@
 {
-  "timestamp": "2019-12-26T12:36:26",
+  "timestamp": "2019-12-26T17:52:02",
   "compiler": {
     "name": "@stencil/core",
     "version": "1.8.2",
@@ -21,7 +21,7 @@
           "mutable": false,
           "attr": "first",
           "reflectToAttr": false,
-          "docs": "",
+          "docs": "the first name",
           "docsTags": [],
           "values": [
             {
@@ -37,7 +37,7 @@
           "mutable": false,
           "attr": "last",
           "reflectToAttr": false,
-          "docs": "",
+          "docs": "the last name",
           "docsTags": [],
           "values": [
             {
