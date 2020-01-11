@@ -38,7 +38,7 @@
     "@stencil/eslint-plugin": "^0.2.1",
     "@stencil/postcss": "^1.0.1",
     "@storybook/addon-a11y": "5.3.0-rc.1",
-    "@storybook/addon-docs": "5.3.0-rc.1",
+    "@storybook/addon-docs": "5.3.0",
     "@storybook/addon-knobs": "5.3.0-rc.1",
     "@storybook/addon-viewport": "5.3.0-rc.1",
     "@storybook/web-components": "5.3.0-rc.1",
