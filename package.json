@@ -41,7 +41,7 @@
     "@storybook/addon-docs": "5.3.12",
     "@storybook/addon-knobs": "5.3.12",
     "@storybook/addon-viewport": "5.3.12",
-    "@storybook/web-components": "5.3.12",
+    "@storybook/web-components": "5.3.13",
     "@types/autoprefixer": "^9.6.1",
     "@types/babel-core": "^6.25.6",
     "@types/cssnano": "^4.0.0",
