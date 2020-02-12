@@ -39,7 +39,7 @@
     "@stencil/postcss": "^1.0.1",
     "@storybook/addon-a11y": "5.3.13",
     "@storybook/addon-docs": "5.3.12",
-    "@storybook/addon-knobs": "5.3.12",
+    "@storybook/addon-knobs": "5.3.13",
     "@storybook/addon-viewport": "5.3.12",
     "@storybook/web-components": "5.3.12",
     "@types/autoprefixer": "^9.6.1",
