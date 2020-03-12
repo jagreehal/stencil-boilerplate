@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
-    "@stencil/eslint-plugin": "^0.2.1",
+    "@stencil/eslint-plugin": "^0.3.0",
     "@stencil/postcss": "^1.0.1",
     "@storybook/addon-a11y": "5.3.12",
     "@storybook/addon-docs": "5.3.12",
