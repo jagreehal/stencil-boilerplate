@@ -20,6 +20,7 @@
     "storybook": "start-storybook -p 9006 -s www",
     "stylelint:fix": "stylelint --fix \"src/**/*.css\"",
     "test": "stencil test --spec --e2e",
+    "test.ci": "npm run test",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "author": "Jag Reehal",
