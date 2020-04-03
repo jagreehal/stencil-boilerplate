@@ -2,4 +2,4 @@
 
 ## Boilerplate for Stencil Apps
 
-git clone and go!
+git clone and go!http://www.oaa-accessibility.org/examplep/datepicker1/

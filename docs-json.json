@@ -1,13 +1,13 @@
 {
-  "timestamp": "2020-02-11T17:23:22",
+  "timestamp": "2020-04-03T17:56:03",
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.8.7",
-    "typescriptVersion": "3.7.5"
+    "version": "1.12.1",
+    "typescriptVersion": "3.8.3"
   },
   "components": [
     {
-      "filePath": "src/components/my-component/my-component.tsx",
+      "filePath": "./src/components/my-component/my-component.tsx",
       "encapsulation": "shadow",
       "tag": "my-component",
       "readme": "# my-app\n\n\n",
@@ -50,6 +50,7 @@
       ],
       "methods": [],
       "events": [],
+      "listeners": [],
       "styles": [],
       "slots": [],
       "dependents": [],
