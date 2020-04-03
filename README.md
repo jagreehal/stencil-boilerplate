@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jagreehal/stencil-boilerplate.svg?branch=master)](https://travis-ci.org/jagreehal/stencil-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/jagreehal/stencil-boilerplate.svg)](https://greenkeeper.io/)
+# Boilerplate for Stencil Apps with Storybook
 
-## Boilerplate for Stencil Apps
-
-git clone and go!http://www.oaa-accessibility.org/examplep/datepicker1/
+git clone and go!
