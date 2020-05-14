@@ -13,6 +13,7 @@ export const config: Config = {
     },
     {
       type: "dist",
+      esmLoaderPath: "../loader",
     },
     { type: "docs-readme" },
     { type: "docs-vscode", file: "docs-vscode.json" },

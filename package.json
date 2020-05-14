@@ -4,16 +4,20 @@
   "description": "Stencil boilerplate",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
   "files": [
-    "dist/"
+    "dist/",
+    "loader/"
   ],
   "scripts": {
     "build-storybook": "build-storybook -s www",
     "build": "NODE_ENV=production stencil build --stats",
     "publish": "gh-pages -d www",
-    "dev": "stencil build --watch --serve",
+    "dev": "stencil build --dev --watch --serve",
     "lint": "eslint src/**/*.tsx",
     "serve": "serve www -p 5000",
     "start": "run-p dev storybook",
