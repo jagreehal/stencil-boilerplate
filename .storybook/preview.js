@@ -4,12 +4,13 @@ import {
   configure,
   addDecorator,
   setCustomElements,
-  addParameters
+  addParameters,
 } from "@storybook/web-components";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
 
 import customElements from "../dist/docs/custom-elements.json";
+// import customElements from "../docs-vscode.json";
 
 setCustomElements(customElements);
 
@@ -18,8 +19,8 @@ addDecorator(withA11y);
 
 addParameters({
   docs: {
-    inlineStories: false
-  }
+    inlineStories: false,
+  },
 });
 
 const req = require.context("../src/components", true, /.stories.(tsx|mdx)$/);
