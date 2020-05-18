@@ -44,7 +44,7 @@
     "@types/babel-core": "^6.25.6",
     "@types/cssnano": "^4.0.0",
     "@types/gh-pages": "^2.2.0",
-    "@types/jest": "25.2.2",
+    "@types/jest": "25.2.3",
     "@types/node": "^14.0.1",
     "@types/prettier": "^2.0.0",
     "@types/puppeteer": "2.1.0",
