@@ -38,7 +38,7 @@
     "@storybook/addon-a11y": "5.3.19",
     "@storybook/addon-docs": "5.3.18",
     "@storybook/addon-knobs": "5.3.19",
-    "@storybook/addon-viewport": "5.3.18",
+    "@storybook/addon-viewport": "5.3.19",
     "@storybook/web-components": "5.3.18",
     "@types/autoprefixer": "^9.7.2",
     "@types/babel-core": "^6.25.6",
