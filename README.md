@@ -1,3 +1,3 @@
-# Boilerplate for Stencil Apps with Storybook
+# Boilerplate for Stencil Apps with Tailwind and Storybook
 
-git clone and go!
+
