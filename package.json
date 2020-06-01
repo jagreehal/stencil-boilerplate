@@ -14,13 +14,13 @@
     "loader/"
   ],
   "scripts": {
-    "build-storybook": "build-storybook -s www",
+    "build-storybook": "build-storybook -s dist/stencil-app",
     "build": "NODE_ENV=production stencil build --stats",
     "dev": "stencil build --dev --watch --serve",
     "lint": "eslint src/**/*.tsx",
     "serve": "serve www -p 5000",
     "start": "run-p dev storybook",
-    "storybook": "start-storybook -p 9006 -s www",
+    "storybook": "start-storybook -p 9006 -s dist/stencil-app",
     "stylelint:fix": "stylelint --fix \"src/**/*.css\"",
     "test": "stencil test --spec --e2e",
     "test.ci": "npm run test",
