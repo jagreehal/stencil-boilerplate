@@ -1,10 +1,13 @@
 import { Config } from "@stencil/core";
 import { postcss } from "@stencil/postcss";
 import { generateJsonDocs } from "./src/customElementDocGenerator";
+const packageJson = require("./package.json");
 
 export const config: Config = {
   globalStyle: "src/global/app.css",
-  namespace: "stencil-app",
+  namespace: packageJson.name,
+  // @ts-ignore
+  buildDocs: true,
   outputTargets: [
     {
       type: "www",

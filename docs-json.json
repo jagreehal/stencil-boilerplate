@@ -1,9 +1,9 @@
 {
-  "timestamp": "2020-05-14T08:11:54",
+  "timestamp": "2020-06-01T16:50:27",
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.12.1",
-    "typescriptVersion": "3.8.3"
+    "version": "1.14.0",
+    "typescriptVersion": "3.9.3"
   },
   "components": [
     {
@@ -53,6 +53,7 @@
       "listeners": [],
       "styles": [],
       "slots": [],
+      "parts": [],
       "dependents": [],
       "dependencies": [],
       "dependencyGraph": {}
