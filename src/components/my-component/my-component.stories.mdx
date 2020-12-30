@@ -1,0 +1,18 @@
+import { Story, Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+import { html } from 'lit-html';
+
+<Meta
+  title="Controls Example MDX"
+  parameters={{
+    component: 'my-component',
+    options: { selectedPanel: 'storybookjs/knobs/panel' },
+  }}
+/>
+
+export const Template = ({ first, last }) =>
+  html` <my-component first="Jag" last="Reehal"></my-component> `;
+
+<Story name="My Component" args={{ first: 'Jag', last: 'Reehal' }}>
+  {Template.bind({})}
+</Story>

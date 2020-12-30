@@ -5,25 +5,20 @@ import {
   addDecorator,
   setCustomElements,
   addParameters,
-} from "@storybook/web-components";
-import { withA11y } from "@storybook/addon-a11y";
-import { withKnobs } from "@storybook/addon-knobs";
-
-import customElements from "../dist/docs/custom-elements.json";
+} from '@storybook/web-components';
+import customElements from '../dist/docs/custom-elements.json';
 // import customElements from "../docs-vscode.json";
 
 setCustomElements(customElements);
-
-addDecorator(withKnobs);
-addDecorator(withA11y);
 
 addParameters({
   docs: {
     inlineStories: false,
   },
+  a11y: {},
 });
 
-const req = require.context("../src/components", true, /.stories.(tsx|mdx)$/);
+const req = require.context('../src/components', true, /.stories.(tsx|mdx)$/);
 configure(req, module);
 if (module.hot) {
   module.hot.accept(req.id, () => {
@@ -32,3 +27,7 @@ if (module.hot) {
     window.location.reload();
   });
 }
+
+export const parameters = {
+  controls: { expanded: true },
+};

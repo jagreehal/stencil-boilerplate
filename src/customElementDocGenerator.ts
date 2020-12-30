@@ -8,15 +8,15 @@ export async function generateJsonDocs(
   config,
   compilerCtx,
   _buildCtx,
-  docsData
+  docsData,
 ) {
   const jsonOutputTargets = config.outputTargets.filter(
-    isOutputTargetCustomElementDocsJson
+    isOutputTargetCustomElementDocsJson,
   );
   const { components, ...docsDataWithoutComponents } = docsData;
   const json = {
     ...docsDataWithoutComponents,
-    tags: components.map(cmp => ({
+    tags: components.map((cmp) => ({
       filePath: cmp.filePath,
       encapsulation: cmp.encapsulation,
       tag: cmp.tag,
@@ -25,49 +25,49 @@ export async function generateJsonDocs(
       description: cmp.docs,
       docsTags: cmp.docsTags,
       usage: cmp.usage,
-      properties: cmp.props.map(prop => ({
+      properties: cmp.props.map((prop) => ({
         ...prop,
-        description: prop.docs
+        description: prop.docs,
       })),
-      attributes: cmp.props.map(prop => ({
+      attributes: cmp.props.map((prop) => ({
         ...prop,
         name: prop.attr,
-        description: prop.docs
+        description: prop.docs,
       })),
       methods: cmp.methods,
-      events: cmp.events.map(e => ({
+      events: cmp.events.map((e) => ({
         ...e,
         name: e.event,
         description: e.docs,
-        type: e.detail
+        type: e.detail,
       })),
       styles: cmp.styles,
       slots: cmp.slots,
       dependents: cmp.dependents,
       dependencies: cmp.dependencies,
       dependencyGraph: cmp.dependencyGraph,
-      deprecation: cmp.deprecation
-    }))
+      deprecation: cmp.deprecation,
+    })),
   };
   const jsonContent = JSON.stringify(json, null, 2);
   await Promise.all(
     jsonOutputTargets.map(() => {
       return writeDocsOutput(compilerCtx, jsonContent, config.rootDir);
-    })
+    }),
   );
 }
 
 function isOutputTargetCustomElementDocsJson(o) {
-  return o.name === "custom-element-docs";
+  return o.name === 'custom-element-docs';
 }
 
 export async function writeDocsOutput(
   compilerCtx,
   jsonContent: string,
-  root: string
+  root: string,
 ) {
   return compilerCtx.fs.writeFile(
     `${root}/dist/docs/custom-elements.json`,
-    jsonContent
+    jsonContent,
   );
 }
