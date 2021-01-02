@@ -1,17 +1,15 @@
-import { text, withKnobs } from "@storybook/addon-knobs";
-import { withA11y } from "@storybook/addon-a11y";
-import { html } from "lit-html";
+import { html } from 'lit-html';
 
 export default {
-  title: "Component",
-  component: "my-component",
-  decorators: [withKnobs, withA11y]
+  title: 'Controls Example',
+  component: 'my-component',
+  parameters: { options: { selectedPanel: 'storybookjs/control/panel' } },
 };
 
-export const MyComponent = () => {
-  const first = text("First", "Jag");
-  const last = text("Last", "Reehal");
-  return html`
-    <my-component first="${first}" last="${last}"></my-component>
-  `;
+export const MyComponent = (args) =>
+  html`<my-component first="${args.first}" last="${args.last}"></my-component>`;
+
+MyComponent.args = {
+  first: 'Jag',
+  last: 'Reehal',
 };

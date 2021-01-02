@@ -1,0 +1,19 @@
+import { Story, Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+import { html } from 'lit-html';
+import { withKnobs } from '@storybook/addon-knobs';
+import { withWebComponentsKnobs } from 'storybook-addon-web-components-knobs';
+import Markdown from './readme.md';
+
+<Meta
+  title="withWebComponentsKnobs MDX"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'my-component',
+    options: { selectedPanel: 'storybookjs/knobs/panel' },
+  }}
+/>
+
+<Story name="My Component">
+  {html` <my-component first="Jag" last="Reehal"></my-component> `}
+</Story>
